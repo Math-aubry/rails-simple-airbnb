@@ -1,0 +1,18 @@
+
+<div class="container">
+
+  <p style="color: green"><%= notice %></p>
+
+  <h1>All your flats</h1>
+
+  <div id="flats">
+  <% @flats.each do |flat| %>
+  <%= render flat %>
+  <p>
+  <%= link_to "Show this flat", flat %>
+  </p>
+  <% end %>
+  </div>
+
+
+</div>

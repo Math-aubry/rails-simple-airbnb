@@ -5,3 +5,38 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts 'Cleaning database...'
+Flat.destroy_all
+
+Flat.create!(
+  name: 'Light & Spacious Garden Flat London',
+  address: '10 Clifton Gardens London W9 1DT',
+  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 75,
+  number_of_guests: 3
+)
+Flat.create!(
+  name: 'Light & Spacious Garden Flat Marseille',
+  address: '10 rue Jean Trinquet',
+  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 55,
+  number_of_guests: 6
+)
+Flat.create!(
+  name: 'Light & Spacious Garden Flat Paris',
+  address: '23 rue Bouchardon',
+  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 155,
+  number_of_guests: 4
+)
+
+Flat.create!(
+  name: 'Light & Spacious Garden Flat Bordeaux',
+  address: '37 rue de la République',
+  description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
+  price_per_night: 80,
+  number_of_guests: 2
+)
+
+puts 'Finished!'

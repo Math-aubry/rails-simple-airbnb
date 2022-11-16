@@ -13,6 +13,11 @@
   </head>
 
   <body>
+    <div class="banner">
+      <%= link_to "Simple Airbnb", flats_path, id:"simple" %>
+      <%= link_to " Add flat", new_flat_path, class:"btn btn-secondary", id:"flat" %>
+    </div>
+
     <%= yield %>
   </body>
 </html>
